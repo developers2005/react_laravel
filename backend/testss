@@ -1,0 +1,11 @@
+change path in config filesystems
+
+public_path('storage') => storage_path('app/public'),
+        public_path('products') => storage_path('app/products'),
+        
+php artisan storage:link --force
+
+
+if env not work
+ php artisan optimize
+php artisan optimize:clear
